@@ -1,7 +1,6 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
-  cursor: none;
   background-color: #fbab7e;
   animation: bg-color-change 2s linear infinite alternate both;
 }
@@ -75,7 +74,17 @@ main section.hero .box-border .box .code {
   font-size: 0.8rem;
   color: #1ff042;
 }
-
+#commands {
+  line-height: 1;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8rem;
+  color: #1ff042;
+  background-color: black;
+  display: inline;
+  border: none;
+  outline: none;
+  width: auto;
+}
 @keyframes bg-color-change {
   0% {
     background-color: #fbab7e;

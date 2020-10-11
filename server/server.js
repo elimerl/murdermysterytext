@@ -7,6 +7,7 @@ const http = require("http").createServer(app);
 const io = require("socket.io")(http);
 const path = require("path");
 const fsj = require("fs-jetpack");
+const Player = require("./lib/player").Player;
 /**
  * load client files
  */
@@ -19,15 +20,16 @@ app.get("/style.css", (req, res) => {
 app.get("/main.js", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/main.js"));
 });
+
 /**
  * Socket.io stuff
  */
 io.on("connection", (socket) => {
-  console.log("a user connected");
-  socket.on("oof", (msg) => {
-    console.log(msg);
-    socket.emit("oof", msg);
+  socket.on("disconnect", () => {
+    console.log("a user disconnected");
   });
+  console.log("a user connected");
+  socket.emit("message", "im a banana");
 });
 /**
  * listen server

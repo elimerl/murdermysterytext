@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MurderMystery</title>
-    <link href="/style.css" rel="stylesheet">
+    <title>Murder Mystery</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -12,11 +12,10 @@
             <div class="lx-container-60">
                 <div class="lx-row">
                     <div class="box-border">
-                        <div class="overlay"></div>
                         <div class="box">
                             <div class="code">
-                                <p>i am donut</p>
-                                <p class="cursor-blink">&gt;&nbsp;<b>|</b></p>
+                                <div id="messages"></div>
+                                <p class="cursor-blink" style="display: inline;">&gt;&nbsp;<b>| </b></p><input size="100" type="text" name="commands" id="commands" value="" onsubmit="console.log('yeet')">
                             </div>
                         </div>
                     </div>
@@ -25,7 +24,8 @@
         </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script><script src="/socket.io/socket.io.js"></script>
-    <script src="/main.js" ></script>
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
+    <script src="./main.js" ></script>
+    <script src="./player.js"></script>
 </body>
 </html>
