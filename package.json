@@ -1,0 +1,7 @@
+{
+  "name": "amongustext",
+  "version": "0.1.0",
+  "description": "Among Us remake in the style of a text-based adventure.",
+  "main": "index.js",
+  "license": "GPL-3.0-or-later"
+}
