@@ -7,6 +7,7 @@ class Game {
     };
     this.id = uuid.v4();
     this.processTurn = require("./processTurn");
+    this.meeting = require("./meeting");
   }
 }
 module.exports = Game;
