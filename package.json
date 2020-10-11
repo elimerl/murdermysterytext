@@ -1,7 +1,7 @@
 {
-  "name": "amongustext",
+  "name": "murdermysterytext",
   "version": "0.1.0",
-  "description": "Among Us remake in the style of a text-based adventure.",
+  "description": "Murder mystery game in style of text adventure.",
   "main": "index.js",
   "license": "GPL-3.0-or-later",
   "scripts": {
