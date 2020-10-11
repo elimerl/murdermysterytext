@@ -1,6 +1,6 @@
 const uuid = require("uuid");
 class Game {
-  constructor() {
+  constructor(map) {
     this.players = {};
     this.addPlayer = (player, id) => {
       this.players[id] = player;
@@ -8,6 +8,7 @@ class Game {
     this.id = uuid.v4();
     this.processTurn = require("./processTurn");
     this.meeting = require("./meeting");
+    this.map = map;
   }
 }
 module.exports = Game;

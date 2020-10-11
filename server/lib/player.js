@@ -10,9 +10,9 @@ class Player {
   constructor(username, murderer, game) {
     this.username = username;
     this.location = "lobby";
-    this.game = game;
     this.murderer = murderer;
     this.id = uuid.v4();
+    this.hand = null;
   }
 }
 module.exports = Player;

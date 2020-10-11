@@ -8,7 +8,10 @@ const Location = require("./location");
 
 class Map {
   constructor(locations) {
-    this.locations = locations;
+    this.locations = {};
+    locations.forEach((element) => {
+      this.locations[element.name] = element;
+    });
   }
 }
 module.exports = Map;

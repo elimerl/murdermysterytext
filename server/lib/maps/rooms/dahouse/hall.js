@@ -6,18 +6,27 @@ const hall = new classes.Location(
   ["ballroom"]
 );
 hall.items[0].events
-  .on("inspect", (game, player, loc, logMessage) => {
+  .on("examine", (game, player, logMessage) => {
+    const loc = game.map.locations[player.location];
+
     logMessage("The back of the clock has a keyhole. But what for?");
   })
-  .on("unlock", (game, player, loc, logMessage) => {
+  .on("unlock", (game, player, logMessage) => {
     if (player.hand.name === "key") {
       logMessage("You open the clock. There is a gun inside.");
-      loc.items.push(require("../../items/dahouse/gun"));
+      game.map.locations[player.location].items.push(
+        require("../../items/dahouse/gun")
+      );
+      // hall.items[1].events.on("shoot", (game, player, loc, logMessage) => {
+      //   logMessage("You shoot the gun. It's super effective!");
+      // });
     } else {
       logMessage("You don't have a key.");
     }
+    return {
+      game,
+      player,
+    };
   });
-hall.items[1].events.on("shoot", (game, player, loc, logMessage) => {
-  logMessage("You shoot the gun. It's super effective!");
-});
+
 module.exports = hall;
