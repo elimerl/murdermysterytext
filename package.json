@@ -1,5 +1,5 @@
 {
-  "name": "murdermysterytext",
+  "name": "@elimerl/murdermysterytext",
   "version": "0.1.0",
   "description": "Murder mystery game in style of text adventure.",
   "main": "index.js",
