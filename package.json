@@ -1,6 +1,6 @@
 {
   "name": "@elimerl/murdermysterytext",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Murder mystery game in style of text adventure.",
   "main": "index.js",
   "license": "GPL-3.0-or-later",
@@ -13,9 +13,10 @@
     "socket.io": "^2.3.0",
     "uuid": "^8.3.1"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
-  "devDependencies": {}
-  ,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/elimerl/murdermysterytext.git"
