@@ -7,7 +7,7 @@ const http = require("http").createServer(app);
 const io = require("socket.io")(http);
 const path = require("path");
 const fsj = require("fs-jetpack");
-const Player = require("./lib/player").Player;
+const Player = require("../lib/player").Player;
 /**
  * load client files
  */
