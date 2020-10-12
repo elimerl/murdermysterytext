@@ -26,6 +26,10 @@ yarn start
 
 and goto [localhost:3000](http://localhost:3000).
 
+# Library
+
+This repository also has a library for making text adventure games. Docs coming soon!
+
 # License
 
 This project is under the GPL v3 license.
