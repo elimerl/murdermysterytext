@@ -15,4 +15,9 @@
   },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {}
+  ,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elimerl/murdermysterytext.git"
+  }
 }
