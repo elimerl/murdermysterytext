@@ -24,6 +24,7 @@ app.get("/main.js", (req, res) => {
 /**
  * Socket.io stuff
  */
+//https://github.com/elimerl/memegen
 io.on("connection", (socket) => {
   socket.on("disconnect", () => {
     console.log("a user disconnected");
