@@ -13,15 +13,6 @@ license document, but changing it is not allowed.
 The GNU General Public License is a free, copyleft license for
 software and other kinds of works.
 
-The licenses for most software and other practical works are designed
-to take away your freedom to share and change the works. By contrast,
-the GNU General Public License is intended to guarantee your freedom
-to share and change all versions of a program--to make sure it remains
-free software for all its users. We, the Free Software Foundation, use
-the GNU General Public License for most of our software; it applies
-also to any other work released this way by its authors. You can apply
-it to your programs, too.
-
 When we speak of free software, we are referring to freedom, not
 price. Our General Public Licenses are designed to make sure that you
 have the freedom to distribute copies of free software (and charge for
@@ -657,7 +648,15 @@ notice like this when it starts in an interactive mode:
         This is free software, and you are welcome to redistribute it
         under certain conditions; type `show c' for details.
 
-The hypothetical commands \`show w' and \`show c' should show the
+The hypothetical commands \`show w' and \`show c' should show theThe licenses for most software and other practical works are designed
+to take away your freedom to share and change the works. By contrast,
+the GNU General Public License is intended to guarantee your freedom
+to share and change all versions of a program--to make sure it remains
+free software for all its users. We, the Free Software Foundation, use
+the GNU General Public License for most of our software; it applies
+also to any other work released this way by its authors. You can apply
+it to your programs, too.
+
 appropriate parts of the General Public License. Of course, your
 program's commands might be different; for a GUI interface, you would
 use an "about box".
